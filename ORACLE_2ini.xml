@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<prio:configurations xmlns:prio="http://www.fisc.com/agent/">
+<prio:section name="FieldTypes">
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>int</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>varchar</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>varchar2</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>date</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>datetime</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>FieldType</prio:lhs>
+<prio:rhs>number</prio:rhs>
+</prio:prop>
+</prio:section>
+<prio:section name="AttributesForExport">
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>93</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.CREATE_DATE</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.OTHERKEY01</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.OTHERKEY02</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.OTHERKEY03</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.OTHERKEY04</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.OTHERKEY05</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.RECORD_ID</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>-8</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.ROWID</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.SOURCE</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.SOURCE_PROFILE_ID</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>AttrNameForExport</prio:lhs>
+<prio:type>12</prio:type>
+<prio:dispname></prio:dispname>
+<prio:rhs>UVA2_PRE_STAGE.STATUS</prio:rhs>
+</prio:prop>
+</prio:section>
+<prio:section name="MandatoryAttributes">
+</prio:section>
+<prio:section name="Configuration">
+<prio:prop>
+<prio:lhs>DataFormat</prio:lhs>
+<prio:rhs>Tables</prio:rhs>
+<prio:values>Tables</prio:values>
+<prio:values>Api</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[  	The Type of the DataFormat  	Eg: Tables, API etc... ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>Server</prio:lhs>
+<prio:rhs>192.168.240.250</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  	The database internet address(can be IP address or a domain name).  	Eg:192.168.240.23 or example.com.  ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>Port</prio:lhs>
+<prio:rhs>1521</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[	Port used for connecting the database.	If no value is given it will connect using the default port.  ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>UserId</prio:lhs>
+<prio:rhs>system</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[    The user account to use while issueing database queries.  ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>Password</prio:lhs>
+<prio:type>Password</prio:type>
+<prio:rhs></prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[    The account password to use while issueing database queries.  ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>InitialDB</prio:lhs>
+<prio:rhs>master</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[    The master database to conect to while forming a database connection.   ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>MaxConnectionPoolSize</prio:lhs>
+<prio:rhs>10</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  	The maximum number of connections that can be created in the connection pool for this system. The connection pool can grow only up to this value.  	If this property is not set, the value of JDBCMaxConnectionPoolSize from the product configuration is used.    ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ExportDataFormats</prio:lhs>
+<prio:type>Hidden</prio:type>
+<prio:rhs>ExportDataFormats</prio:rhs>
+<prio:values>Tables</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[  	This is a hidden configuration property used to control valid dataformats of export task. If this is set, only dataformats  	added under this will be allowed to select for an export only task.    ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>DSN</prio:lhs>
+<prio:type>Hidden</prio:type>
+<prio:rhs>iamdev1</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  	This is the Database Source Name to which we connect   	for database operations(Export/Import).  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ModifyIfEntryExists</prio:lhs>
+<prio:type>Import</prio:type>
+<prio:rhs>FALSE</prio:rhs>
+<prio:values>TRUE</prio:values>
+<prio:values>FALSE</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[  If value is set to TRUE the agent will attempt a modify operation if  add fails.  Default Value is FALSE.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>PreferredKeys</prio:lhs>
+<prio:type>Hidden</prio:type>
+<prio:rhs>UVA2_PRE_STAGE.SOURCE_PROFILE_ID</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[	This is a mandatory field and is used by the JDBC agent for 	performing SQL queries. The PreferredKeys must be the primary key in one of the 	tables chosen and a foreign key in all other tables. If this is not possible, 	then the chosen tables are infeasible for a singular view. The PreferredKeys should 	have the form tablename.fieldname.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ExportQuery</prio:lhs>
+<prio:type>Hidden</prio:type>
+<prio:rhs>Select UVAIAMSVC.UVA2_PRE_STAGE.CREATE_DATE, UVAIAMSVC.UVA2_PRE_STAGE.OTHERKEY01, UVAIAMSVC.UVA2_PRE_STAGE.OTHERKEY02, UVAIAMSVC.UVA2_PRE_STAGE.OTHERKEY03, UVAIAMSVC.UVA2_PRE_STAGE.OTHERKEY04, UVAIAMSVC.UVA2_PRE_STAGE.OTHERKEY05, UVAIAMSVC.UVA2_PRE_STAGE.RECORD_ID, UVAIAMSVC.UVA2_PRE_STAGE.ROWID, UVAIAMSVC.UVA2_PRE_STAGE.SOURCE, UVAIAMSVC.UVA2_PRE_STAGE.SOURCE_PROFILE_ID, UVAIAMSVC.UVA2_PRE_STAGE.STATUS From UVAIAMSVC.UVA2_PRE_STAGE where UPPER(UVA2_PRE_STAGE.STATUS)=UPPER('##%SOA_Status_Pending##')</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[	The SQL Query used to export data from the JDBC Server.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>MaximumRows</prio:lhs>
+<prio:type>Export</prio:type>
+<prio:rhs>0</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[	This is the maximum limit on the number of records returned from an 	export SQL query. Specify a value of 0 to specify all rows. Eg:100.   This property can only be configured/used when ExportMode is FullExport.     This can be configured as a global variable with the syntax ##%Max_Results##.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ExcludeEmptyFields</prio:lhs>
+<prio:type>Export</prio:type>
+<prio:rhs>FALSE</prio:rhs>
+<prio:values>TRUE</prio:values>
+<prio:values>FALSE</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[    If value is set to FALSE, connector will return the NULL fields with empty values.  Default Value is FALSE.      ]]></prio:constdata>
+<prio:prop systemProperty="true">
+<prio:lhs>EntitlementQuery</prio:lhs>
+<prio:rhs>SELECT * FROM sys.dba_roles</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  Query for searching entitlelements in Oracle  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>Id</prio:lhs>
+<prio:type>Import</prio:type>
+<prio:rhs>CREATEUSER.USER_NAME</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  	This attribute is for connected system association, its value will be used as user id to the connected system.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>loginId</prio:lhs>
+<prio:type>Import</prio:type>
+<prio:rhs>CREATEUSER.USER_NAME</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[  	This attribute is for connected system association, its value will be used as login id to the connected system.  ]]></prio:constdata>
+<prio:prop useSpecific="Api">
+<prio:lhs>RenameActionOnOriginalAccount</prio:lhs>
+<prio:type>Import</prio:type>
+<prio:rhs>Lock</prio:rhs>
+<prio:values>Delete</prio:values>
+<prio:values>Lock</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[  	The action to be done on the original account after renaming it.   	Delete will delete the original account.  	Lock will retain the original account in locked state.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ExportMode</prio:lhs>
+<prio:type>Export</prio:type>
+<prio:rhs>FullExport</prio:rhs>
+<prio:values>FullExport</prio:values>
+<prio:values>DeltaExport</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[     FullExport will export all selected attributes.     DeltaExport will export changed, mandatory or all selected attributes.    The type of attributes to export is determined in the DeltaExportMode parameter.    ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>DeltaExportMode</prio:lhs>
+<prio:type>Export</prio:type>
+<prio:rhs>ChangedAndMandatoryAttributes</prio:rhs>
+<prio:values>OnlyChangedAttributes</prio:values>
+<prio:values>ChangedAndMandatoryAttributes</prio:values>
+<prio:values>AllAttributes</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[  When the ExportMode: DeltaExport has been selected, this parameter determines   what attributes to export when a change has taken place.   If no change has been made no data will be exported.     OnlyChangedAttributes will export only the changed attributes.   ChangedAndMandatoryAttributes will export changed and mandatory attributes.   AllAttributes will export all attributes that contain a value.     The default value is ChangedAndMandatoryAttributes.   ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>DynamicConnectedSystemOption</prio:lhs>
+<prio:rhs>None</prio:rhs>
+<prio:values>None</prio:values>
+<prio:values>Transaction-SystemName</prio:values>
+<prio:values>GlobalVariable</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[	This property controls the Dynamic Connected System behavior.  	If the value is set to None (default) then the default connected system name will be used.  	If this value is set to Transaction-SystemName, then the connected system name will be taken from value of  	Transaction-SystemName attribute in the data. If Transaction-SystemName does not contain any valid data then the  	import/export operation will fail. If the value is set to GlobalVariable, then the connected system name will be  	taken from the property DynamicConnectedSystem.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>DynamicConnectedSystem</prio:lhs>
+<prio:rhs></prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[	When the DynamicConnectedSystemOption: GlobalVariable has been selected,  	we have to select the global variable which is to be used as the dynamic connected system name.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>ExecuteGIGAssociatedTaskAsynchronously</prio:lhs>
+<prio:rhs>FALSE</prio:rhs>
+<prio:values>TRUE</prio:values>
+<prio:values>FALSE</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[ This property controls execution mode for GIG associated tasks.   	If this property is true, GIG associated tasks will execute asynchronously.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>MaxConcurrentEntryProcessing</prio:lhs>
+<prio:type>import</prio:type>
+<prio:rhs>0</prio:rhs>
+</prio:prop>
+<prio:constdata><![CDATA[ Specify maximum number of entries that can be processed concurrently.  	For each concurrent process, connector will create new resources like thread and connection.   	So we have to set this properly based on resource availability.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>MultiValuedAttributeHandling</prio:lhs>
+<prio:type>import</prio:type>
+<prio:rhs>PickFirstValue</prio:rhs>
+<prio:values>PickFirstValue</prio:values>
+<prio:values>PickLastValue</prio:values>
+<prio:values>MergeValuesCommaSeparated</prio:values>
+<prio:values>MergeValuesPipeSeparated</prio:values>
+</prio:prop>
+<prio:constdata><![CDATA[ Specify the option to be used for multi-valued attributes when mapper generates output.  	PickFirstValue picks the first value when there are multiple values.  	PickLastValue picks the last value when there are multiple values.  	MergeValuesCommaSeparated merges all values using , as the separator character.  	MergeValuesPipeSeparated merges all values using | as the separator character.  ]]></prio:constdata>
+<prio:prop>
+<prio:lhs>SelectedSchema</prio:lhs>
+<prio:rhs>UVAIAMSVC</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>Export</prio:lhs>
+<prio:rhs>TRUE</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>Import</prio:lhs>
+<prio:rhs>FALSE</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>TaskName</prio:lhs>
+<prio:rhs>From_IdMDatabase1_1</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>EnableTaskAudit</prio:lhs>
+<prio:rhs>TRUE</prio:rhs>
+<prio:values>TRUE</prio:values>
+<prio:values>FALSE</prio:values>
+</prio:prop>
+</prio:section>
+</prio:configurations>
