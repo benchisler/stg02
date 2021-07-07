@@ -75,12 +75,6 @@
 </prio:prop>
 <prio:constdata><![CDATA[  	This is a hidden configuration property used to control valid dataformats of export task. If this is set, only dataformats  	added under this will be allowed to select for an export only task.    ]]></prio:constdata>
 <prio:prop>
-<prio:lhs>DSN</prio:lhs>
-<prio:type>Hidden</prio:type>
-<prio:rhs>iamdev1</prio:rhs>
-</prio:prop>
-<prio:constdata><![CDATA[  	This is the Database Source Name to which we connect   	for database operations(Export/Import).  ]]></prio:constdata>
-<prio:prop>
 <prio:lhs>ModifyIfEntryExists</prio:lhs>
 <prio:type>Import</prio:type>
 <prio:rhs>TRUE</prio:rhs>
@@ -88,18 +82,6 @@
 <prio:values>FALSE</prio:values>
 </prio:prop>
 <prio:constdata><![CDATA[  If value is set to TRUE the agent will attempt a modify operation if  add fails.  Default Value is FALSE.  ]]></prio:constdata>
-<prio:prop>
-<prio:lhs>PreferredKeys</prio:lhs>
-<prio:type>Hidden</prio:type>
-<prio:rhs>UVA2_SOA_STAGING.SOURCE_PROFILE_ID</prio:rhs>
-</prio:prop>
-<prio:constdata><![CDATA[	This is a mandatory field and is used by the JDBC agent for 	performing SQL queries. The PreferredKeys must be the primary key in one of the 	tables chosen and a foreign key in all other tables. If this is not possible, 	then the chosen tables are infeasible for a singular view. The PreferredKeys should 	have the form tablename.fieldname.  ]]></prio:constdata>
-<prio:prop>
-<prio:lhs>ExportQuery</prio:lhs>
-<prio:type>Hidden</prio:type>
-<prio:rhs></prio:rhs>
-</prio:prop>
-<prio:constdata><![CDATA[	The SQL Query used to export data from the JDBC Server.  ]]></prio:constdata>
 <prio:prop>
 <prio:lhs>MaximumRows</prio:lhs>
 <prio:type>Export</prio:type>
@@ -195,6 +177,14 @@
 <prio:prop>
 <prio:lhs>SelectedSchema</prio:lhs>
 <prio:rhs>UVAIAMSVC</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>PreferredKeys</prio:lhs>
+<prio:rhs>UVA2_SOA_STAGING.SOURCE_PROFILE_ID</prio:rhs>
+</prio:prop>
+<prio:prop>
+<prio:lhs>DSN</prio:lhs>
+<prio:rhs>iamdev1</prio:rhs>
 </prio:prop>
 <prio:prop>
 <prio:lhs>Export</prio:lhs>
